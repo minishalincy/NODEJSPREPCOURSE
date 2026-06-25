@@ -1,3 +1,3 @@
 console.log(process.platform);
 
-global.user = "Minisha"
+global.name = "Minisha Lincy"

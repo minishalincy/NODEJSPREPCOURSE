@@ -1,2 +1,2 @@
-require("./app.js")
-console.log(user);
+require("./app")
+console.log(global.name);
