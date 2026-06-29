@@ -1,3 +1,11 @@
-console.log(process.platform);
+require("dotenv").config()
 
-global.name = "Minisha Lincy"
+console.log(process.env.USER_NAME);
+
+if(process.platform === "win32"){
+    console.log("Application Running on Windows");
+    
+}else{
+    console.log("Application is on different server");
+    
+}
