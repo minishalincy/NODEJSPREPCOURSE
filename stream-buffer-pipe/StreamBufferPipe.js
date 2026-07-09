@@ -4,7 +4,9 @@ const readStream = fs.createReadStream("Data.txt")
 const writeStream = fs.createWriteStream("DownloadedFile.txt")
 
 readStream.on("data",(chuncks)=>{ //"data" is a built-in event
-    console.log(chuncks.length);
+    console.log(chuncks.length); //displayes the each chunck size
+    console.log(chuncks); //displayes the buffer(raw bytes of data)
+    
 })
 
 readStream.pipe(writeStream)
