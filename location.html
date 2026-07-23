@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    
+      navigator.geolocation.getCurrentPosition((x) => {
+        console.log("Latitude: ", x.coords.latitude);
+        console.log("Longitude: ", x.coords.longitude);
+      });
+   
+  </script>
+</body>
+</html>
